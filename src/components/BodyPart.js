@@ -14,10 +14,19 @@ import upper_legs_Icon from '../assets/icons/upper legs.png';
 import shoulders_Icon from '../assets/icons/shoulders.png';
 
 const BodyPart = ({item, setBodyPart, bodyPart}) => {
-console.log({item})
+
   let img = all_Icon
-   if ({item}.toString() === 'back') { img = back_Icon}
-    else{img =cardio_Icon};
+  if (item === "all") { img = all_Icon}
+  else if(item === "back") { img = back_Icon} 
+  else if(item === "cardio") { img = cardio_Icon}
+  else if(item === "chest") { img = chest_Icon}
+  else if(item === "neck") { img = neck_Icon}
+  else if(item === "shoulders") { img = shoulders_Icon}
+  else if(item === "lower arms") { img = lower_arms_Icon}
+  else if(item === "upper arms") { img = upper_arms_Icon}
+  else if(item === "lower legs") { img = lower_legs_Icon}
+  else if(item === "upper legs") { img = upper_legs_Icon}
+  else if(item === "waist") { img = waist_Icon};
 
   return (
     <Stack
@@ -40,7 +49,7 @@ console.log({item})
         window.scrollTo({top: 1800, left: 100, behavior:'smooth'})
       }}
     >
-        <img src={img} alt={item} style={{width:'40px', height:'40px'}} />
+        <img src={img} alt={item} style={{width:'90px', height:'90px'}} />
         <Typography fontSize="24px" fontWeight='bold' color="#3A1212" textTransform='capitalize'>{item}</Typography>
     </Stack>
     
