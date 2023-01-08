@@ -9,7 +9,7 @@ const HeroBanner = () => {
       ml:{sm:'50px'}
     }} position="relative" p="20px" >
       <Typography color="#ff2625" fontWeight="600" fontSize="26px" >
-        Fitness Club
+        Workout Search
       </Typography>
       <Typography fontWeight={700}
       sx={{fontSize: {lg:'44px', xs:'40px'}
