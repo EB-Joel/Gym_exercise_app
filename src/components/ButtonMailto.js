@@ -1,18 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
-const ButtonMailto = ({ mailto, label }) => {
+const ButtonMailto= ({ email, subject, body, ...props }) => {
     return (
-        <Link
-            to='#'
-            onClick={(e) => {
-                window.location.href = mailto;
-                e.preventDefault();
-            }}
-        >
-            {label}
-        </Link>
+      <a href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
+        {props.children}
+      </a>
     );
-};
-
+  };
 export default ButtonMailto;

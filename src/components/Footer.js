@@ -8,7 +8,7 @@ const Footer = () => (
       bodypart icons by Icons8
     </Stack>
     <Typography variant="h5" sx={{ fontSize: { lg: '28px', xs: '20px' } }} mt="41px" textAlign="center" pb="20px">WebApp Made by Eric Berroa</Typography>
-    <Typography variant="body1" sx={{ fontSize: { lg: '28px', xs: '20px' } }} mt="2px" textAlign="center" pb="10px"><ButtonMailto label="Contact Me" mailto="EricBerroa@gmail.com" /></Typography>
+    <Typography variant="body1" sx={{ fontSize: { lg: '28px', xs: '20px' } }} mt="2px" textAlign="center" pb="10px"><ButtonMailto email="EricBerroa@gmail.com" >Contact Me</ButtonMailto></Typography>
   </Box>
 );
 
